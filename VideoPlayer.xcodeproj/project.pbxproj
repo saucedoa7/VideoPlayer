@@ -15,6 +15,7 @@
 		50A3A27A1A12AD69002C6709 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A2791A12AD69002C6709 /* Images.xcassets */; };
 		50A3A27D1A12AD69002C6709 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A27B1A12AD69002C6709 /* LaunchScreen.xib */; };
 		50A3A2891A12AD69002C6709 /* VideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3A2881A12AD69002C6709 /* VideoPlayerTests.m */; };
+		50A3A2931A12AE35002C6709 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A3A2921A12AE35002C6709 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		50A3A2821A12AD69002C6709 /* VideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A3A2871A12AD69002C6709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A3A2881A12AD69002C6709 /* VideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerTests.m; sourceTree = "<group>"; };
+		50A3A2921A12AE35002C6709 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A3A2931A12AE35002C6709 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		50A3A25D1A12AD69002C6709 = {
 			isa = PBXGroup;
 			children = (
+				50A3A2921A12AE35002C6709 /* MediaPlayer.framework */,
 				50A3A2681A12AD69002C6709 /* VideoPlayer */,
 				50A3A2851A12AD69002C6709 /* VideoPlayerTests */,
 				50A3A2671A12AD69002C6709 /* Products */,

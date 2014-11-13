@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet UIWebView *webView;
+    IBOutlet UIButton *btnPlay2;
+    IBOutlet UIButton *btnPlay1;
+    IBOutlet UIButton *btnPlay3;
+    
+}
+- (IBAction)onPlayButtonPressed:(UIButton *)sender;
+- (IBAction)onPlayButtonPressed2:(UIButton *)sender;
+- (IBAction)onPlayButtonPressed3:(UIButton *)sender;
 
 
 @end

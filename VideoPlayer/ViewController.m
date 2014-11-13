@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController ()
 
@@ -16,12 +17,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self ChangePlayButtonState];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onPlayButtonPressed:(UIButton *)sender {
+
+    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=cZaJYDPY-YQ&list=UU7zOpx9wgvGBCDEjujnAPQA"];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+
 }
 
+- (IBAction)onPlayButtonPressed2:(UIButton *)sender {
+    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=SSrCaX8ttuw"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+}
+
+- (IBAction)onPlayButtonPressed3:(UIButton *)sender {
+    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=wvzfOyW0ZMo"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+}
+
+#pragma mark - Helpers
+
+- (void)ChangePlayButtonState {
+    UIImage *playImage = [UIImage imageNamed:@"play"];
+
+    [btnPlay1 setTitle:@"" forState:UIControlStateNormal];
+    [btnPlay2 setTitle:@"" forState:UIControlStateNormal];
+    [btnPlay3 setTitle:@"" forState:UIControlStateNormal];
+
+    [btnPlay1 setTitle:@"1" forState:UIControlStateHighlighted];
+
+    [btnPlay1 setBounds:CGRectMake(310, 294, 44, 44)];
+    [btnPlay1 setBackgroundImage:playImage forState:UIControlStateNormal];
+    [btnPlay2 setBackgroundImage:playImage forState:UIControlStateNormal];
+    [btnPlay3 setBackgroundImage:playImage forState:UIControlStateNormal];
+    
+}
 @end
