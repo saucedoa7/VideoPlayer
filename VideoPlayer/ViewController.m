@@ -23,7 +23,7 @@
 
 - (IBAction)onPlayButtonPressed:(UIButton *)sender {
 
-    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=cZaJYDPY-YQ&list=UU7zOpx9wgvGBCDEjujnAPQA"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Test" withExtension:@"mov"];
 
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];

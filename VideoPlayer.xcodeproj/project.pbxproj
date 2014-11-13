@@ -16,6 +16,7 @@
 		50A3A27D1A12AD69002C6709 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3A27B1A12AD69002C6709 /* LaunchScreen.xib */; };
 		50A3A2891A12AD69002C6709 /* VideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3A2881A12AD69002C6709 /* VideoPlayerTests.m */; };
 		50A3A2931A12AE35002C6709 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A3A2921A12AE35002C6709 /* MediaPlayer.framework */; };
+		50BD5C511A14372600723963 /* Test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 50BD5C501A14372600723963 /* Test.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		50A3A2871A12AD69002C6709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A3A2881A12AD69002C6709 /* VideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerTests.m; sourceTree = "<group>"; };
 		50A3A2921A12AE35002C6709 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		50BD5C501A14372600723963 /* Test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Test.mov; path = ../../../../../../Desktop/Test.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				50A3A2681A12AD69002C6709 /* VideoPlayer */,
 				50A3A2851A12AD69002C6709 /* VideoPlayerTests */,
 				50A3A2671A12AD69002C6709 /* Products */,
+				50BD5C521A14372C00723963 /* Clips */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +127,15 @@
 				50A3A2871A12AD69002C6709 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50BD5C521A14372C00723963 /* Clips */ = {
+			isa = PBXGroup;
+			children = (
+				50BD5C501A14372600723963 /* Test.mov */,
+			);
+			name = Clips;
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BD5C511A14372600723963 /* Test.mov in Resources */,
 				50A3A2781A12AD69002C6709 /* Main.storyboard in Resources */,
 				50A3A27D1A12AD69002C6709 /* LaunchScreen.xib in Resources */,
 				50A3A27A1A12AD69002C6709 /* Images.xcassets in Resources */,
@@ -420,6 +433,7 @@
 				50A3A28E1A12AD69002C6709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50A3A28F1A12AD69002C6709 /* Build configuration list for PBXNativeTarget "VideoPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +442,7 @@
 				50A3A2911A12AD69002C6709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
